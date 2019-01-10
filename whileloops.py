@@ -28,13 +28,16 @@
 
    # cont = input('enter c if u want more')
 
-
-x = 1
-y = 1
-cont = 'c'
-while cont == 'c':
+def fibon(n):
+  x = 1
+  y = 1
+  cont = 1
+  n = int(input('enter how many fibonacci numbers you want'))
+  while cont <= n:
     print('a new fibon number is ',x +y)
     temp = x
     x = y
     y = y + temp
-    cont = input("if u want more fibon nums press c, else press any")
+
+    cont = cont +1
+
