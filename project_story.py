@@ -1,19 +1,7 @@
 from storytext import text
-
-list_text = text.split(' ')
-print(list_text)
+from sixtolib import translate
 
 
-for i in range(len(list_text):
-  for key in mydicttionary.keys():
-    if list_text[i] == key:
-      list_text.remove(list_text[i])
-      list_text.insert(i, mydicttionary[key])
-
-newtext = ''
-for word in list_text:
-    newtext = newtext + ' ' + word
-
-print(newtext)
-
-mydicttionary = {}
+mydicttionary = {'Spider' : input('Replacement for spider')}
+new_text = translate(text, mydicttionary).split('.')
+print(new_text)
